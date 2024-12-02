@@ -1,0 +1,102 @@
+@import "../../../styles/color.module.scss";
+@import "../../../styles/text.module.scss";
+
+.contact {
+  background-color: $first-color-dark;
+}
+.containerContact {
+  display: grid;
+  grid-template-columns: 30% 58%;
+  gap: 12%;
+  margin-top: 3rem; 
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.input_group {
+  label {
+    color: white;
+    margin-bottom: .3rem;
+  }
+}
+
+.contactListItem {
+  display: flex;
+  gap: 20px;
+  a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: .65rem;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+.icon{
+  font-size: 2.3rem;
+  color: $first-color;
+}
+
+.titleContact{
+  color: $text-color;
+  font-size: $h3-font-size;
+  font-weight: 500;
+}
+
+.subContact{
+  color: $first-color;
+  font-size: $normal-font-size;
+  font-weight: 500;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.input, .textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  border: 2px solid $first-color;
+  resize: none;
+  color: $text-color;
+}
+
+.textarea {
+  margin-top: .3rem;
+}
+.row_space {
+  margin: 1rem 0;
+}
+
+.button {
+  margin-top: 1rem;
+}
+
+@media (max-width:991px) {
+  .contact {
+    height: auto;
+  }
+  .containerContact {
+    grid-template-columns: 1fr;
+    margin: 6rem 0 0 0;
+    gap: 6rem;
+  }
+  .button{
+    margin: auto auto;
+    margin-bottom: 20px;
+  }
+  .col_gap {
+    margin-top: 1rem;
+  }
+}

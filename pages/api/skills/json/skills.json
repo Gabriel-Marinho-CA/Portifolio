@@ -1,0 +1,50 @@
+[
+  {
+    "name": "HTML5",
+    "icon_path": "/icons/icon-html5.svg"
+  },
+  {
+    "name": "CSS3",
+    "icon_path": "/icons/icon-CSS3.svg"
+  },
+  {
+    "name": "JavaScript",
+    "icon_path": "/icons/icon-JavaScript.svg"
+  },
+  {
+    "name": "Typescript",
+    "icon_path": "/icons/icon-Typescript.svg"
+  },
+  {
+    "name": "Nodejs",
+    "icon_path": "/icons/icon-Nodejs.svg"
+  },
+  {
+    "name": "NestJS",
+    "icon_path": "/icons/icon-NestJS.svg"
+  },
+  {
+    "name": "NextJs",
+    "icon_path": "/icons/icon-NextJs.svg"
+  },
+  {
+    "name": "ReactJs",
+    "icon_path": "/icons/icon-ReactJs.svg"
+  },
+  {
+    "name": "PostgreSQL",
+    "icon_path": "/icons/icon-PostgreSQL.svg"
+  },
+  {
+    "name": "MongoDB",
+    "icon_path": "/icons/icon-MongoDB.svg"
+  },
+  {
+    "name": "Jest",
+    "icon_path": "/icons/icon-Jest.svg"
+  },
+  {
+    "name": "Git",
+    "icon_path": "/icons/icon-Git.svg"
+  }
+]

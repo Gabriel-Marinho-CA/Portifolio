@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Arvensis",
+    "subtitle": "Ecommerce de cosmeticos - Shopify",
+    "photo": "/images/arvensis.jpg",
+    "description": "Ecommerce realizado utilizando as teconologias: LiquidJs, Tailwind, GraphQL, Javascript, Shopify",
+    "link": "https://arvensiscosmeticos.com.br",
+    "github": false
+  },
+  {
+    "name": "Vinsel",
+    "subtitle": "Ecommerce de vinhos - Shopify ",
+    "photo": "/images/vinsel.jpg",
+    "description": "Ecommerce realizado utilizando as teconologias: LiquidJs, Tailwind, GraphQL, Javascript, Shopify",
+    "link": "https://vinsel.com.br",
+    "github": false
+  },
+  {
+    "name": "Acimaq",
+    "subtitle": "Ecommerce de ferramentas - Vtex.io",
+    "photo": "/images/acimaq.jpg",
+    "description": "Ecommerce realizado utilizando as teconologias: ReactJS, GraphQL,SCSS,Typescript, JSONC, VTEXIO",
+    "link": "https://www.acimaq.com.br",
+    "github": false
+  },
+  {
+    "name": "Itapua - Calçados",
+    "subtitle": "Ecommerce de calçados - Vtex Legacy",
+    "photo": "/images/itapua.jpg",
+    "description": "Ecommerce realizado utilizando as teconologias: HTML5,CSS3,JAVASCRIPT, VTEX",
+    "link": "https://www.itapua.com.br",
+    "github": false
+  },
+  {
+    "name": "LetmeAsk",
+    "subtitle": "Plataforma de perguntas e respostas ao vivo",
+    "photo": "/images/letmeask.jpg",
+    "description": "Projeto realizado utilizando as tecnologias: ReactJS,Firebase,Styled Components,Typescript",
+    "link": "https://github.com/Gabriel-Marinho-CA/LetmeAsk",
+    "github": true
+  },
+  {
+    "name": "Booking App",
+    "subtitle": "Plataforma de Agendamento de hotéis",
+    "photo": "/images/bookingapp.jpg",
+    "description": "Projeto realizado utilizando as tecnologias: Postgresql,Nodejs,Express,Sequelize,ReactJS,Typescript",
+    "link": "https://github.com/Gabriel-Marinho-CA/Booking-App",
+    "github": true
+  }
+]
