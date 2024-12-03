@@ -1,8 +1,5 @@
-@import "../../../styles/color.module.scss";
-@import "../../../styles/text.module.scss";
-
 .footer {
-  background-color: $first-color-dark;
+  background-color: var(--first-color-dark);
   height: 30vh;
   display: flex;
   display: flex;
@@ -11,7 +8,7 @@
   align-items: center;
 }
 .spanColor{
-  color: $first-color;
+  color: var(--first-color);
 }
 
 .footerIcon {
@@ -21,16 +18,16 @@
 }
 
 .icon {
-  font-size: $h2-font-size;
+  font-size: var(--h2-font-size);
   color: white;
   :hover{
     transition: 0.4s;
-    color: $first-color;
+    color: var(--first-color);
   }
 }
 
 .copy {
-  font-size: $normal-font-size;
+  font-size: var(--normal-font-size);
   color: white;
 }
 
@@ -40,7 +37,7 @@
     text-align: center;
   }
   .subTitle{
-    font-size: $normal-font-size;
+    font-size: var(--normal-font-size);
     text-align: center;
     padding: 0 5px;
   }

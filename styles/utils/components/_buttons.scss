@@ -1,0 +1,23 @@
+.button {
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid $first-color;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: $font-medium;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    color: $first-color;
+  }
+}
+.buttonFlex {
+  display: inline-flex;
+  align-items: center;
+}
+.buttonIcon {
+  font-size: 1.25rem;
+  margin-left: 0.5rem;
+  transition: 0.3s;
+}

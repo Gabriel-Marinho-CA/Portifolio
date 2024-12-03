@@ -1,4 +1,3 @@
-import { Col, Container, Row } from "reactstrap";
 import styles from "./styles.module.scss";
 import { BsWhatsapp } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
@@ -7,6 +6,7 @@ import Link from "next/link";
 import { FormEvent, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import process from "process";
+import { Container } from "../utils/Container";
 
 export const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -75,70 +75,57 @@ export const Contact = () => {
               </div>
             </div>
             <form ref={form} onSubmit={sendEmail} className={styles.form}>
-              <Container>
-                <Row className={styles.row_space}>
-                  <Col sm={12} lg={6}>
-                    <div className={styles.input_group}>
-                      <label htmlFor="input_name">Seu nome*</label>
-                      <input
-                        id="input_name"
-                        type="text"
-                        name="name"
-                        placeholder="Nome"
-                        required
-                        className={styles.input}
-                      />
-                    </div>
-                  </Col>
-                  <Col className={styles.col_gap}>
-                    <div className={styles.input_group}>
-                      <label htmlFor="enterprise">Empresa*</label>
-                      <input
-                        type="text"
-                        id="enterprise"
-                        name="enterprise"
-                        placeholder="Empresa"
-                        required
-                        className={styles.input}
-                      />
-                    </div>
-                  </Col>
-                </Row>
-                <Row className={styles.row_space}>
-                  <Col>
-                    <div className={styles.input_group}>
-                      <label htmlFor="email">Email*</label>
-                      <input
-                        id="email"
-                        type="email"
-                        name="email"
-                        placeholder="Email"
-                        required
-                        className={styles.input}
-                      />
-                    </div>
-                  </Col>
-                </Row>
-                <Row className={styles.row_space}>
-                  <Col>
-                    <textarea
-                      name="message"
-                      placeholder="Mensagem"
-                      rows={7}
+              <div className={styles.wrapper_form}>
+                <div className={styles.wrapper_input_group}>
+                  <div className={styles.input_group}>
+                    <label htmlFor="input_name">Seu nome*</label>
+                    <input
+                      id="input_name"
+                      type="text"
+                      name="name"
+                      placeholder="Nome"
                       required
-                      className={styles.textarea}
-                    ></textarea>
-                  </Col>
-                </Row>
+                      className={styles.input}
+                    />
+                  </div>
 
-                <Row className={styles.row_space}>
-                  <Col>
-                    <button type="submit" className="button button-lg">
-                      Enviar
-                    </button>
-                  </Col>
-                </Row>
-              </Container>
+                  <div className={styles.input_group}>
+                    <label htmlFor="enterprise">Empresa*</label>
+                    <input
+                      type="text"
+                      id="enterprise"
+                      name="enterprise"
+                      placeholder="Empresa"
+                      required
+                      className={styles.input}
+                    />
+                  </div>
+                </div>
+
+                <div className={styles.input_group}>
+                  <label htmlFor="email">Email*</label>
+                  <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                    className={styles.input}
+                  />
+                </div>
+
+                <textarea
+                  name="message"
+                  placeholder="Mensagem"
+                  rows={7}
+                  required
+                  className={styles.textarea}
+                ></textarea>
+
+                <button type="submit" className="button">
+                  Enviar
+                </button>
+              </div>
             </form>
           </div>
         </Container>

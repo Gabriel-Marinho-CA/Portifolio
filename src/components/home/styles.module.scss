@@ -1,18 +1,15 @@
-@import "../../../styles/color.module.scss";
-@import "../../../styles/text.module.scss";
-
 .home {
-  min-height: 100vh;
-  background-color: $first-color-dark;
+  background-color: var(--first-color-dark);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: $text-color;
+  color: var(--text-color);
   position: relative;
+ 
 }
 
 .color {
-  color: $first-color;
+  color: var(--first-color);
 }
 
 .homeContainer {
@@ -21,20 +18,21 @@
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
-  
+
   @media (max-width: 997px) {
     flex-direction: column;
+    padding-top: 0;
   }
 
   .icons {
     display: flex;
     flex-direction: column;
-    gap:1rem;
+    gap: 1rem;
 
-    @media (max-width:997px) {
+    @media (max-width: 997px) {
       position: fixed;
       top: 50%;
-      left: 4rem;
+      left: 2rem;
       z-index: 2;
     }
   }
@@ -43,14 +41,14 @@
       margin: 0;
     }
     .title {
-      font-size: $big-font-size;
+      font-size: var(--big-font-size);
       font-weight: 900;
       font-family: "Poppins", sans-serif;
     }
     .subTitle {
-      color: $first-color;
-      font-size: $h2-font-size;
-      font-weight: $font-medium;
+      color: var(--first-color);
+      font-size: var(--h2-font-size);
+      font-weight: var(--font-medium);
       margin-bottom: 1.2rem;
     }
 
@@ -59,7 +57,7 @@
       width: 130px;
       height: 60px;
       border-radius: 20px;
-      background-color: $first-color;
+      background-color: var(--first-color);
       font-size: 1.2rem;
       font-weight: 500;
       color: white;
@@ -79,10 +77,10 @@
   justify-content: center;
   align-items: center;
   border-radius: 100%;
-  color: $first-color-dark;
-  background-color: $first-color;
+  color: var(--first-color-dark);
+  background-color: var(--first-color);
   &:hover {
-    color: $text-color;
+    color: var(--text-color);
   }
 }
 
@@ -107,11 +105,11 @@
   cursor: pointer;
 }
 .iconDownMouse {
-  color: $first-color;
+  color: var(--first-color);
   font-size: 1.7rem;
 }
 .iconDown {
-  color: $first-color;
+  color: var(--first-color);
   font-size: 1.1rem;
 }
 

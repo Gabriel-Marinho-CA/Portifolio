@@ -1,13 +1,14 @@
-import { Container } from "reactstrap";
+// import styles from "../../../styles/about.module.scss";
 import styles from "./styles.module.scss";
 import { MdOutlineFileDownload } from "react-icons/md";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Image from "next/image";
+import { Container } from "../utils/Container";
 
 export const About = () => {
-  useEffect(() => {
+  useEffect(() => { 
     AOS.init();
   }, []);
   return (
@@ -23,8 +24,8 @@ export const About = () => {
               className={styles.imageAbout}
               width={450}
               height={350}
-              src="/code-coffe.jpg"
-              alt="Minha foto"
+              src="/images/code-coffe.jpg"
+              alt="foto"
               data-aos="fade-right"
               data-aos-duration="1000"
             />

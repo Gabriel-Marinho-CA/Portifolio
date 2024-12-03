@@ -1,11 +1,18 @@
-@import "../../../styles/color.module.scss";
 .nav{
     display: none;
 }
 
-
-
 @media (max-width:768px) {
+    .logo {
+        padding-top: 3rem;
+        text-align: center;
+        font-size: 2rem;
+        color: white;
+        font-weight: bold;
+      }
+      .color { 
+        color: var(--first-color);
+      }
     .nav{
         background-color: rgba(0,0,0,0.3);
         width: max-content;
@@ -38,7 +45,7 @@
         display: flex;
         color: white;
         font-size: 1.6rem;
-        color: $first-color;
+        color: var(--first-color);
     }
 
 }

@@ -1,8 +1,8 @@
-import { Container } from "reactstrap";
 import styles from "./styles.module.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
+import { Container } from "../utils/Container";
 
 interface ISkills {
   name: string;
@@ -40,12 +40,12 @@ export const Skills = () => {
             {skills.map((skill) => {
               const icon_path_formatted = skill.icon_path.toLowerCase();
               return (
-                <div className={styles.skillsData} key={skill.name}>
+                <li className={styles.skillsData} key={skill.name}>
                   <div className={styles.skillsTitle}>
                     <img src={icon_path_formatted} width={'85'} height={'85'} alt={skill.name} />
                     <h3 className={styles.skillsName}>{skill.name}</h3>
                   </div>
-                </div>
+                </li>
               );
             })}
           </ul>

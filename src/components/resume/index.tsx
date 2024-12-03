@@ -1,10 +1,11 @@
-import { Container } from "reactstrap";
+
 import styles from "./styles.module.scss";
 import { FaGraduationCap } from "react-icons/fa";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Container } from "../utils/Container";
 
 export const Resume = () => {
     useEffect(() => {

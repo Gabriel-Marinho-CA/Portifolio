@@ -1,0 +1,13 @@
+$first-color: #4dffbc;
+$first-color-dark: #01171c; //#01171C
+$text-color: #fbf9f9;
+$first-color-light: #43fdb6;
+$first-color-lighten: #3ffdb4;
+
+:root {
+  --first-color: #{$first-color};
+  --first-color-dark: #{$first-color-dark};
+  --text-color: #{$text-color};
+  --first-color-light: #{$first-color-light};
+  --first-color-lighten: #{$first-color-lighten};
+}

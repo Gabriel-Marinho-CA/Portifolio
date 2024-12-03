@@ -1,90 +1,87 @@
-@import "../../../styles/color.module.scss";
-@import "../../../styles/text.module.scss";
-
-.resume{
-    background-color: $first-color-dark ;
-    color: $text-color;
+.resume {
+  background-color: var(--first-color-dark);
+  color: var(--text-color);
 }
-.resumeEducation{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 5px;
-    color: $first-color;
-    font-size: $h1-font-size;
-    margin-bottom: 3rem;
+.resumeEducation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 5px;
+  color: var(--first-color);
+  font-size: var(--h1-font-size);
+  margin-bottom: 3rem;
 }
 
-.qualificationData{
-    display: grid;
-    grid-template-columns: 1fr max-content 1fr;
-    column-gap: 1.6rem;
+.qualificationData {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.6rem;
 }
-.ItensRight{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-bottom: 2rem;
+.ItensRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 2rem;
 }
-.title{
-    font-size: $h3-font-size ;
-    font-weight: 500;
+.title {
+  font-size: var(--h3-font-size);
+  font-weight: 500;
 }
-.subTitle{
-    display: inline-block;
-    font-size:  $normal-font-size ;
-    margin-bottom: 1rem;
+.subTitle {
+  display: inline-block;
+  font-size: var(--normal-font-size);
+  margin-bottom: 1rem;
 }
-.calendar{
-    font-size: $normal-font-size;
-    color: $first-color;
+.calendar {
+  font-size: var(--normal-font-size);
+  color: var(--first-color);
 }
-.rounder{
-    display: inline-block;
-    width: 13px;
-    height: 13px;
-    background-color: $first-color;
-    border-radius: 50%;
+.rounder {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: var(--first-color);
+  border-radius: 50%;
 }
-.line{
-    display: block;
-    width: 2px;
-    height: 100%;
-    background-color: $first-color;
-    transform: translate(6px,-7px);
+.line {
+  display: block;
+  width: 2px;
+  height: 100%;
+  background-color: var(--first-color);
+  transform: translate(6px, -7px);
 }
 
-@media(max-width:724px){
-    .title{
-        font-size: $h2-font-size ;
-    }
-    .subTitle{
-        font-size:  $normal-font-size;
-    }
-    .calendar{
-        font-size: $small-font-size ;
-    }
+@media (max-width: 724px) {
+  .title {
+    font-size: var(--h2-font-size);
+  }
+  .subTitle {
+    font-size: var(--normal-font-size);
+  }
+  .calendar {
+    font-size: var(--small-font-size);
+  }
 }
-@media(max-width:468px){ 
-    .title{
-        font-size: $normal-font-size ;
-    }
-    .subTitle{
-        font-size:  $small-font-size;
-    }
-    .calendar{
-        font-size: $normal-font-size  ;
-    }
+@media (max-width: 468px) {
+  .title {
+    font-size: var(--normal-font-size);
+  }
+  .subTitle {
+    font-size: var(--small-font-size);
+  }
+  .calendar {
+    font-size: var(--normal-font-size);
+  }
 }
-@media(max-width:320px){
-    .title{
-        font-size: $small-font-size ;
-    }
-    .subTitle{
-        font-size:  $smaller-font-size ;
-    }
-    .calendar{
-        font-size: $normal-font-size ;
-    }
+@media (max-width: 320px) {
+  .title {
+    font-size: var(--small-font-size);
+  }
+  .subTitle {
+    font-size: var(--smaller-font-size);
+  }
+  .calendar {
+    font-size: var(--normal-font-size);
+  }
 }

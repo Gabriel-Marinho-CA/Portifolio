@@ -1,31 +1,28 @@
-@import "../../../styles/color.module.scss";
-@import "../../../styles/text.module.scss";
-
 .skill {
-  background-color: $first-color-dark;
+  background-color: var(--first-color-dark);
 }
 
 .listSkills {
   margin-top: 3rem;
   display: grid;
-  grid-template-columns: repeat(6,auto);
+  grid-template-columns: repeat(6, auto);
   padding-left: 0;
 
-  @media (max-width:768px) {
-    grid-template-columns: repeat(4,auto);
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(4, auto);
   }
-  @media (max-width:547px) {
-    grid-template-columns: repeat(3,auto);
+  @media (max-width: 547px) {
+    grid-template-columns: repeat(3, auto);
     img {
       max-width: 55px;
       max-height: 55px;
     }
   }
 
-  @media (max-width:400px) {
-    grid-template-columns: repeat(2,auto);
+  @media (max-width: 400px) {
+    grid-template-columns: repeat(2, auto);
   }
-  
+
   .skillsData {
     width: 70%;
     margin: 0px auto 2rem auto;
@@ -39,7 +36,7 @@
       margin-bottom: 0;
     }
     .skillsName {
-      font-size: $h3-font-size;
+      font-size: var(--h3-font-size);
       color: white;
       font-weight: bold;
     }

@@ -1,0 +1,26 @@
+.title {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: $big-font-size;
+  font-weight: 900;
+  color: $text-color;
+  margin: 0;
+}
+
+.subTitle {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: $h2-font-size;
+  font-weight: 900;
+  color: $first-color;
+  margin: 0;
+}
+
+@media (max-width: 552px) {
+  .title {
+    font-size: 2rem;
+  }
+  .subTitle {
+    font-size: $h3-font-size;
+  }
+}
