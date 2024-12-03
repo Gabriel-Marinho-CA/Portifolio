@@ -3,39 +3,12 @@ import Link from "next/link";
 import { AiOutlineGithub } from "react-icons/ai";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
-import { useState, useEffect } from "react";
 import { BiLastPage } from "react-icons/bi";
 import { Container } from "../utils/Container";
-
-interface IProject {
-  name: string;
-  subtitle: string;
-  photo: string;
-  description: string;
-  link: string;
-  github: boolean;
-}
-interface IApiResponse {
-  projects: IProject[];
-}
+import { useProject } from "../hooks/useProjects";
 
 export const Project = () => {
-  const [projects, setProjects] = useState<IProject[]>([]);
-  useEffect(() => {
-    getAllProjects();
-  }, []);
-
-  const getAllProjects = async () => {
-    try {
-      const request = await fetch("/api/projects");
-      const response: IApiResponse = await request.json();
-
-      setProjects(response.projects);
-    } catch (error) {
-      console.error("Error in skills api", error);
-    }
-  };
-
+  const { projects } = useProject();
   return (
     <div className={styles.project} id="projetos">
       <Container>
@@ -44,9 +17,9 @@ export const Project = () => {
       </Container>
       <Container>
         <div className={styles.wrapper_splide}>
-          {projects.length > 0 && (
+          {projects && projects.length > 0 && (
             <Splide
-            className={styles.splide_custom_class}
+              className={styles.splide_custom_class}
               options={{
                 type: "loop",
                 perPage: 4,

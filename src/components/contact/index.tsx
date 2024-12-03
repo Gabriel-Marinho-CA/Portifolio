@@ -9,7 +9,9 @@ import process from "process";
 import { Container } from "../utils/Container";
 
 export const Contact = () => {
+
   const form = useRef<HTMLFormElement>(null);
+
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const emailService = String(process.env.NEXT_PUBLIC_EMAIL_SERVICE);
@@ -40,7 +42,7 @@ export const Contact = () => {
             <div className={styles.contactList}>
               <div className={styles.contactListItem}>
                 <Link
-                  href="https://wa.me/5511960693921?text=Ol%C3%A1+Guilherme%2C+tudo+bem+%3F"
+                  href="https://wa.me/5527999774257?text=Ol%C3%A1+Gabriel%2C+tudo+bem+%3F"
                   target={"_blank"}
                 >
                   <BsWhatsapp className={styles.icon} />

@@ -12,7 +12,7 @@
   }
 }
 .containerAbout {
-  @include Flex($jc: center, $ai: center, $fd: row, $gap: 2%);
+  @include Flex($jc: center, $ai: center, $fd: row, $gap: 5%);
 
   @media (max-width: 1199px) {
     flex-direction: column;
